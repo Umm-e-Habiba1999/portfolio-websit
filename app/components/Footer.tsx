@@ -21,7 +21,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-center md:items-end">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Portfolio. All rights reserved.
+              © 2026 Umm-e-Habiba. All rights reserved.
             </p>
             <p className="text-gray-600 text-xs mt-1">
               Designed and Developed with Next.js & Tailwind

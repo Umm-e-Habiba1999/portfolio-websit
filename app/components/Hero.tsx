@@ -20,8 +20,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-300 text-sm font-semibold mb-8 backdrop-blur-sm">
-            Available for Internship 2026
+          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-cyan-500/20 border border-indigo-500/30 shadow-lg shadow-indigo-500/10 backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 animate-pulse"></span>
+            <span className="text-sm font-bold bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              Available for Internship 2026
+            </span>
           </span>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">

@@ -32,9 +32,13 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="#home" className="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent hover:opacity-90 transition-opacity">
-          Portfolio
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link href="#home" className="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent hover:opacity-90 transition-opacity">
+            Portfolio
+          </Link>
+          <span className="text-sm font-medium text-gray-400 hidden sm:block">/</span>
+          <span className="text-lg font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent hidden sm:block">Umm-e-Habiba</span>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-1">
@@ -83,6 +87,9 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-t border-white/10 shadow-2xl">
           <div className="flex flex-col p-4 space-y-2">
+            <div className="px-4 py-2 text-center border-b border-white/5">
+              <span className="text-lg font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">Umm-e-Habiba</span>
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.name}
