@@ -20,12 +20,12 @@ const projects = [
     link: 'https://milestone2-resumebyummehabiba1.vercel.app/',
   },
   {
-    title: 'E-commerce Frontend',
-    description: 'A fully responsive e-commerce platform with product listings, cart functionality, and checkout flow.',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
+    title: 'Password Strength Generator',
+    description: 'A simple and interactive tool that generates strong passwords and evaluates their strength in real-time based on length and character complexity. It helps users create secure passwords and improve their online security.',
+    tech: [ 'TypeScript',  'HTML', 'CSS'],
     gradient: 'from-cyan-600 to-blue-700',
-    image: 'Shop',
-    link: 'https://your-ecommerce-link.com',
+    image: '🔐',
+    link: 'https://passwordstrenghtmeterproject.streamlit.app/',
   },
 ];
 
