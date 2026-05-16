@@ -4,18 +4,20 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'AI Chatbot UI',
-    description: 'A modern conversational AI interface with real-time responses, smart suggestions, and an intuitive user experience.',
-    tech: ['Next.js', 'TypeScript', 'OpenAI API', 'Tailwind'],
+    title: 'AI Learning Book with Chatbot',
+    description: 'An interactive AI learning book combined with a chatbot to help users understand AI concepts in a simple way. Includes a deployed web interface and chatbot integration. It also supports Urdu language translation, allowing users to learn in Urdu, and the chatbot works as a translator as well.',
+    tech: ['Python', 'TypeScript', 'OpenAI API', 'Docusaurus'],
     gradient: 'from-indigo-600 to-purple-700',
     image: 'AI',
+    link: 'https://hackathon1-ashen.vercel.app/',
   },
   {
-    title: 'Portfolio Website',
-    description: 'A stunning personal portfolio showcasing projects, skills, and contact information with smooth animations.',
-    tech: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
+    title: 'Interactive Resume Builder',
+    description: 'A simple yet modern resume website built using TypeScript. It allows users to showcase their profile, skills, and experience in a clean and responsive layout.',
+    tech: ['TypeScript', 'HTML', 'CSS'],
     gradient: 'from-purple-600 to-pink-700',
-    image: 'Port',
+    image: 'CV',
+    link: 'https://milestone2-resumebyummehabiba1.vercel.app/',
   },
   {
     title: 'E-commerce Frontend',
@@ -23,6 +25,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind'],
     gradient: 'from-cyan-600 to-blue-700',
     image: 'Shop',
+    link: 'https://your-ecommerce-link.com',
   },
 ];
 
@@ -89,7 +92,9 @@ export default function Projects() {
 
                 {/* View Button */}
                 <a
-                  href="#"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold transition-colors group-hover:translate-x-1 transition-transform duration-300"
                 >
                   View Project
